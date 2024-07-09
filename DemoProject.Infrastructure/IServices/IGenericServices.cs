@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace DemoProject.Infrastructure.IServices
 {
-    public interface IGenericServices
+    public interface IGenericServices<T> where T : class
     {
-        Task<T> GetAsync<T>(Int64 id);
-        T Get<T>(Int64 id);
-        Task<List<T>> GetAllAsync<T>();
-        List<T> GetAll<T>();
-        Task<T> AddAsync<T>();
-        T Add<T>();
-        Task<T> UpdateAsync<T>();
-        T Update<T>();
-        Task<T> DeleteAsync<T>();
-        T Delete<T>(Int64 id);
+        Task<T?> GetAsync(Int64 id);
+        T? Get(Int64 id);
+        Task<List<T>> GetAllAsync();
+        List<T> GetAll();
+        Task<T> AddAsync(T payload);
+        T Add(T payload);
+        Task<T> UpdateAsync(T payload);
+        T Update(T payload);
+        Task<string> DeleteAsync(Int64 id);
+        string Delete(Int64 id);
     }
 }

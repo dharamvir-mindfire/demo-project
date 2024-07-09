@@ -18,5 +18,6 @@ namespace DemoProject.Database
             builder.Ignore<IdentityRoleClaim<string>>();
             Seeder.RoleSeeder(builder);
         }
+        public DbSet<Person> Persons { get; set; }
     }
 }
