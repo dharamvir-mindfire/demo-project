@@ -1,0 +1,40 @@
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.deps.json
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.runtimeconfig.json
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.dll
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.pdb
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Data.dll
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Infrastructure.dll
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Data.pdb
+D:\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Infrastructure.pdb
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.csproj.AssemblyReference.cache
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.AssemblyInfoInputs.cache
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.AssemblyInfo.cs
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.csproj.CoreCompileInputs.cache
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.sourcelink.json
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProj.1228B791.Up2Date
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.dll
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\refint\DemoProject.Services.dll
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.pdb
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.genruntimeconfig.cache
+D:\demo-project\DemoProject.Services\obj\Release\net8.0\ref\DemoProject.Services.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.deps.json
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.runtimeconfig.json
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Services.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Data.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Infrastructure.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Data.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Services\bin\Release\net8.0\DemoProject.Infrastructure.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.csproj.AssemblyReference.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.AssemblyInfoInputs.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.AssemblyInfo.cs
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.csproj.CoreCompileInputs.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.sourcelink.json
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProj.1228B791.Up2Date
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\refint\DemoProject.Services.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\DemoProject.Services.genruntimeconfig.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Services\obj\Release\net8.0\ref\DemoProject.Services.dll

@@ -1,0 +1,24 @@
+D:\demo-project\DemoProject.Infrastructure\bin\Release\net8.0\DemoProject.Infrastructure.deps.json
+D:\demo-project\DemoProject.Infrastructure\bin\Release\net8.0\DemoProject.Infrastructure.dll
+D:\demo-project\DemoProject.Infrastructure\bin\Release\net8.0\DemoProject.Infrastructure.pdb
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.AssemblyInfoInputs.cache
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.AssemblyInfo.cs
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.csproj.CoreCompileInputs.cache
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.sourcelink.json
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.dll
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\refint\DemoProject.Infrastructure.dll
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.pdb
+D:\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\ref\DemoProject.Infrastructure.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\bin\Release\net8.0\DemoProject.Infrastructure.deps.json
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\bin\Release\net8.0\DemoProject.Infrastructure.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\bin\Release\net8.0\DemoProject.Infrastructure.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.AssemblyInfoInputs.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.AssemblyInfo.cs
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.sourcelink.json
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\refint\DemoProject.Infrastructure.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\DemoProject.Infrastructure.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Infrastructure\obj\Release\net8.0\ref\DemoProject.Infrastructure.dll

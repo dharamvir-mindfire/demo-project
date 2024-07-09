@@ -1,0 +1,30 @@
+D:\Mindfire Solutions\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.deps.json
+D:\Mindfire Solutions\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.runtimeconfig.json
+D:\Mindfire Solutions\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.csproj.AssemblyReference.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.AssemblyInfoInputs.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.AssemblyInfo.cs
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.csproj.CoreCompileInputs.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.sourcelink.json
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\refint\DemoProject.Data.dll
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.pdb
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.genruntimeconfig.cache
+D:\Mindfire Solutions\demo-project\DemoProject.Data\obj\Debug\net8.0\ref\DemoProject.Data.dll
+D:\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.deps.json
+D:\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.runtimeconfig.json
+D:\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.dll
+D:\demo-project\DemoProject.Data\bin\Debug\net8.0\DemoProject.Data.pdb
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.csproj.AssemblyReference.cache
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.AssemblyInfoInputs.cache
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.AssemblyInfo.cs
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.csproj.CoreCompileInputs.cache
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.sourcelink.json
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.dll
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\refint\DemoProject.Data.dll
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.pdb
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\DemoProject.Data.genruntimeconfig.cache
+D:\demo-project\DemoProject.Data\obj\Debug\net8.0\ref\DemoProject.Data.dll
