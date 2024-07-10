@@ -3,7 +3,7 @@ const BuggyComponent = () => {
   const [items, setItems] = useState<any[]>([]);
 
   const addItem = () => {
-    let newItems = items;
+    let newItems = [...items];
     newItems.push(items?.length + 1);
     console.log(items);
     setItems(newItems);

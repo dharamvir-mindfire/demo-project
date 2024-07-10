@@ -1,4 +1,5 @@
-﻿using DemoProject.Dtos;
+﻿using DemoProject.Database;
+using DemoProject.Dtos;
 using DemoProject.Infrastructure.IServices;
 using DemoProject.IServices;
 using DemoProject.Models;
@@ -9,44 +10,54 @@ namespace DemoProject.Services
 {
     public class PersonServices : IPersonServices
     {
-        private readonly IGenericServices<Person> _genericServices;
-        public PersonServices(IGenericServices<Person> genericServices)
+        private readonly AppDbContext _dbContext;
+        public PersonServices(AppDbContext dbContext)
         {
-            _genericServices = genericServices;
+            _dbContext = dbContext;
         }
         public ResponseDto Get(Int64 id)
         {
-            var dto = _genericServices.Get(id).Adapt<PersonDto>();
+            var dto = _dbContext.Persons.Find(id).Adapt<PersonDto>();
             var response = new ResponseDto();
             response.data = dto;
             return response;
         }
         public ResponseDto GetAll()
         {
-            var dto = _genericServices.GetAll().Adapt<List<PersonDto>>();
+            var dto = _dbContext.Persons.ToList().Adapt<List<PersonDto>>();
             var response = new ResponseDto();
             response.data = dto;
             return response;
         }
         public ResponseDto Add(PersonDto payload)
         {
-            var added = _genericServices.Add(payload.Adapt<Person>()).Adapt<PersonDto>();
+            _dbContext.Persons.Add(payload.Adapt<Person>());
+            _dbContext.SaveChanges();
             var response = new ResponseDto();
-            response.data = added;
+            response.data = payload.Adapt<PersonDto>();
             return response;
         }
         public ResponseDto Update(PersonDto payload)
         {
-            var updated = _genericServices.Add(payload.Adapt<Person>()).Adapt<PersonDto>();
+            _dbContext.Persons.Attach(payload.Adapt<Person>());
+            _dbContext.SaveChanges();
             var response = new ResponseDto();
-            response.data = updated;
+            response.data = payload.Adapt<PersonDto>();
             return response;
         }
         public ResponseDto Delete(Int64 id)
         {
-            var message = _genericServices.Delete(id);
-            var response = new ResponseDto();
-            response.message = message;
+            var existing = _dbContext.Persons.Find(id);
+                var response = new ResponseDto();
+            if (existing != null)
+            {
+                var message = _dbContext.Persons.Remove(existing);
+                response.message = "Deleted Successfully";
+            }
+            else
+            {
+                response.message = "Not found";
+            }
             return response;
         }
     }

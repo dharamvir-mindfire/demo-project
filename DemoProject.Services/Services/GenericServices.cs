@@ -40,7 +40,7 @@ namespace DemoProject.Services.Services
         }
         public T Add(T payload)
         {
-            _dbContext.AddAsync(payload);
+            _dbContext.Add(payload);
             _dbContext.SaveChanges();
             return payload;
         }
@@ -54,7 +54,7 @@ namespace DemoProject.Services.Services
         {
             _dbContext.Attach<T>(payload);
             _dbContext.Entry(payload).State = EntityState.Modified;
-            _dbContext.SaveChangesAsync();
+            _dbContext.SaveChanges();
             return payload;
         }
         public async Task<string> DeleteAsync(Int64 id)
