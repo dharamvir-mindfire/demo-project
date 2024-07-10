@@ -17,6 +17,8 @@ namespace DemoProject.Database
             builder.Ignore<IdentityUserToken<string>>();
             builder.Ignore<IdentityRoleClaim<string>>();
             builder.Entity<Person>().Property(p => p.Name).HasMaxLength(450);
+            builder.Entity<Person>().Property(p => p.Email).HasMaxLength(100);
+            builder.Entity<Person>().Property(p => p.PhoneNumber).HasMaxLength(10);
             Seeder.RoleSeeder(builder);
         }
         public DbSet<Person> Persons { get; set; }
