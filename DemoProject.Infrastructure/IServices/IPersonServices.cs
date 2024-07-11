@@ -5,10 +5,10 @@ namespace DemoProject.IServices
 {
     public interface IPersonServices
     {
-        ResponseDto GetAll();
-        ResponseDto Get(Int64 id);
-        ResponseDto Add(PersonDto payload);
-        ResponseDto Update(PersonDto payload);
-        ResponseDto Delete(Int64 id);
+        ResponseDto<List<PersonDto>> GetAll();
+        ResponseDto<PersonDto> Get(Int64 id);
+        ResponseDto<PersonDto> Add(PersonDto payload);
+        ResponseDto<PersonDto> Update(PersonDto payload);
+        ResponseDto<PersonDto> Delete(Int64 id);
     }
 }

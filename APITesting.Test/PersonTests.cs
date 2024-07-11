@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace DemoProject.Test
 {
     [TestClass]
-    public class HomeTests
+    public class PersonTests
     {
         [TestMethod]
         public async Task PersonsTest()
@@ -21,7 +21,7 @@ namespace DemoProject.Test
             var httpClient = webFactory.CreateClient();
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
-            var response = await httpClient.GetAsync("/api/Home/Persons");
+            var response = await httpClient.GetAsync("/api/Persons/Persons");
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
             var data = JsonConvert.DeserializeObject<dynamic>(await response.Content.ReadAsStringAsync());
             Assert.IsTrue(data.Count > 0);

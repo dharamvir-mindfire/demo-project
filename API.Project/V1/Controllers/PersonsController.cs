@@ -24,36 +24,36 @@ namespace DemoProject.App.V1.Controllers
         public IActionResult GetAll()
         {
             var response = _personServices.GetAll();
-            Response.StatusCode = response.statusCode;
-            return new JsonResult(response.statusCode == 200 ? response.data : response.message);
+            Response.StatusCode = response.StatusCode;
+            return new JsonResult(response.StatusCode == 200 ? response.Data : response.Message);
         }
         [HttpGet]
         public IActionResult Get(int id)
         {
             var response = _personServices.Get(id);
-            Response.StatusCode = response.statusCode;
-            return new JsonResult(response.statusCode == 200 ? response.data : response.message);
+            Response.StatusCode = response.StatusCode;
+            return new JsonResult(response.StatusCode == 200 ? response.Data : response.Message);
         }
         [HttpPost]
         public IActionResult Add(PersonDto payload)
         {
             var response = _personServices.Add(payload);
-            Response.StatusCode = response.statusCode;
-            return new JsonResult(response.statusCode == 200 ? response.data : response.message);
+            Response.StatusCode = response.StatusCode;
+            return new JsonResult(response.StatusCode == 200 ? response.Data : response.Message);
         }
         [HttpPut]
         public IActionResult Update(PersonDto payload)
         {
             var response = _personServices.Update(payload);
-            Response.StatusCode = response.statusCode;
-            return new JsonResult(response.statusCode == 200 ? response.data : response.message);
+            Response.StatusCode = response.StatusCode;
+            return new JsonResult(response.StatusCode == 200 ? response.Data : response.Message);
         }
         [HttpDelete]
         public IActionResult Delete(Int64 id)
         {
             var response = _personServices.Delete(id);
-            Response.StatusCode = response.statusCode;
-            return new JsonResult(response.message);
+            Response.StatusCode = response.StatusCode;
+            return new JsonResult(response.Message);
         }
     }
 }

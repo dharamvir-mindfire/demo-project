@@ -19,15 +19,15 @@ namespace DemoProject.App.V1.Controllers
         public async Task<IActionResult> Register(RegistrationDto payload)
         {
             var response = await _authServices.Register(payload);
-            Response.StatusCode = response.statusCode;
-            return new JsonResult(response.message);
+            Response.StatusCode = response.StatusCode;
+            return new JsonResult(response.Message);
         }
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto payload)
         {
             var response = await _authServices.Login(payload);
-            Response.StatusCode = response.statusCode;
-            return new JsonResult(response.statusCode == 200 ? response.data : response.message);
+            Response.StatusCode = response.StatusCode;
+            return new JsonResult(response.StatusCode == 200 ? response.Data : response.Message);
         }
     }
 }

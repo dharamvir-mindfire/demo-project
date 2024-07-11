@@ -1,13 +1,23 @@
-﻿namespace DemoProject.Dtos
+﻿
+namespace DemoProject.Dtos
 {
     public class ResponseDto
     {
+        public int StatusCode { get; set; }
+        public string? Message { get; set; }
+        public object? Data { get; set; }
         public ResponseDto()
         {
-            statusCode = 200;
+            StatusCode = 200;
         }
-        public int statusCode { get; set; }
-        public string? message { get; set; }
-        public object? data { get; set; }
+    }
+    public class ResponseDto<T> : ResponseDto
+    {
+        public T? Data { get; set; }
+
+        public ResponseDto()
+        {
+            Data = default;
+        }
     }
 }

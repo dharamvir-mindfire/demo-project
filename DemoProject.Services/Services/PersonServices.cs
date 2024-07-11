@@ -15,48 +15,48 @@ namespace DemoProject.Services
         {
             _dbContext = dbContext;
         }
-        public ResponseDto Get(Int64 id)
+        public ResponseDto<PersonDto> Get(Int64 id)
         {
             var dto = _dbContext.Persons.Find(id).Adapt<PersonDto>();
-            var response = new ResponseDto();
-            response.data = dto;
+            var response = new ResponseDto<PersonDto>();
+            response.Data = dto;
             return response;
         }
-        public ResponseDto GetAll()
+        public ResponseDto<List<PersonDto>?> GetAll()
         {
             var dto = _dbContext.Persons.ToList().Adapt<List<PersonDto>>();
-            var response = new ResponseDto();
-            response.data = dto;
+            var response = new ResponseDto<List<PersonDto>?>();
+            response.Data = dto;
             return response;
         }
-        public ResponseDto Add(PersonDto payload)
+        public ResponseDto<PersonDto> Add(PersonDto payload)
         {
             _dbContext.Persons.Add(payload.Adapt<Person>());
             _dbContext.SaveChanges();
-            var response = new ResponseDto();
-            response.data = payload.Adapt<PersonDto>();
+            var response = new ResponseDto<PersonDto>();
+            response.Data = payload.Adapt<PersonDto>();
             return response;
         }
-        public ResponseDto Update(PersonDto payload)
+        public ResponseDto<PersonDto> Update(PersonDto payload)
         {
             _dbContext.Persons.Attach(payload.Adapt<Person>());
             _dbContext.SaveChanges();
-            var response = new ResponseDto();
-            response.data = payload.Adapt<PersonDto>();
+            var response = new ResponseDto<PersonDto>();
+            response.Data = payload.Adapt<PersonDto>();
             return response;
         }
-        public ResponseDto Delete(Int64 id)
+        public ResponseDto<PersonDto> Delete(Int64 id)
         {
             var existing = _dbContext.Persons.Find(id);
-                var response = new ResponseDto();
+                var response = new ResponseDto<PersonDto>();
             if (existing != null)
             {
-                var message = _dbContext.Persons.Remove(existing);
-                response.message = "Deleted Successfully";
+                _dbContext.Persons.Remove(existing);
+                response.Message = "Deleted Successfully";
             }
             else
             {
-                response.message = "Not found";
+                response.Message = "Not found";
             }
             return response;
         }

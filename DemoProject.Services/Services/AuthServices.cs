@@ -29,24 +29,24 @@ namespace DemoProject.Services
                     result = await _userManager.AddToRoleAsync(user, "Customer");
                     if (result.Succeeded)
                     {
-                        response.message = "Registered Success";
+                        response.Message = "Registered Success";
                     }
                     else
                     {
-                        response.statusCode = 400;
-                        response.message = "Failed to add role";
+                        response.StatusCode = 400;
+                        response.Message = "Failed to add role";
                     }
                 }
                 else
                 {
-                    response.statusCode = 400;
-                    response.message = "Failed to register";
+                    response.StatusCode = 400;
+                    response.Message = "Failed to register";
                 }
             }
             catch (Exception ex)
             {
-                response.statusCode = 400;
-                response.message = $"Unexpected error occured:{ex.Message}";
+                response.StatusCode = 400;
+                response.Message = $"Unexpected error occured:{ex.Message}";
             }
             return response;
         }
@@ -58,8 +58,8 @@ namespace DemoProject.Services
                 var user = await _userManager.FindByNameAsync(payload.UserName);
                 if (user == null)
                 {
-                    response.statusCode = 404;
-                    response.message = "User not found";
+                    response.StatusCode = 404;
+                    response.Message = "User not found";
                 }
                 else
                 {
@@ -73,7 +73,7 @@ namespace DemoProject.Services
                             tokenUser.Role = roles[0];
                         }
                         var token = _authHelper.GenerateJWTToken(tokenUser);
-                        response.data = new
+                        response.Data = new
                         {
                             fullName = user.FullName,
                             email = user.Email,
@@ -83,15 +83,15 @@ namespace DemoProject.Services
                     }
                     else
                     {
-                        response.statusCode = 401;
-                        response.message = "Invalid user";
+                        response.StatusCode = 401;
+                        response.Message = "Invalid user";
                     }
                 }
             }
             catch
             {
-                response.statusCode = 400;
-                response.message = "Unexpected error occured";
+                response.StatusCode = 400;
+                response.Message = "Unexpected error occured";
             }
             return response;
         }
