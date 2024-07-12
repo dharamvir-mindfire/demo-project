@@ -89,6 +89,24 @@ namespace DemoProject.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "7de6b658-4034-4dd8-9480-bb985e5j778e",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "e982d101-c025-466a-a809-ecb8af704037",
+                            Email = "dharamvir1@mindfiresolutions.com",
+                            EmailConfirmed = false,
+                            FullName = "Dharamvir",
+                            LockoutEnabled = false,
+                            NormalizedUserName = "DHARAMVIR1@MINDFIRESOLUTIONS.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPIlhGUuGfhxth2NFR4AAyxAAMI7NnQ2rHjEJg1mlpOpscZD1fgdYGoOYGSj8Oqq/Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "b3501338-735b-4a77-9785-7d684ea6f922",
+                            TwoFactorEnabled = false,
+                            UserName = "dharamvir1@mindfiresolutions.com"
+                        });
                 });
 
             modelBuilder.Entity("DemoProject.Models.Person", b =>
@@ -173,6 +191,13 @@ namespace DemoProject.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "7de6b658-4034-4dd8-9480-bb985e5j778e",
+                            RoleId = "7e51f693-ff34-49fe-a998-d53192b40e51"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>

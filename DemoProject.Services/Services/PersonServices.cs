@@ -17,6 +17,7 @@ namespace DemoProject.Services
         }
         public ResponseDto<PersonDto> Get(Int64 id)
         {
+            var test = _dbContext.Persons.Where(g => g.Id == id).FirstOrDefault();
             var dto = _dbContext.Persons.Find(id).Adapt<PersonDto>();
             var response = new ResponseDto<PersonDto>();
             response.Data = dto;
@@ -39,16 +40,27 @@ namespace DemoProject.Services
         }
         public ResponseDto<PersonDto> Update(PersonDto payload)
         {
-            _dbContext.Persons.Attach(payload.Adapt<Person>());
-            _dbContext.SaveChanges();
             var response = new ResponseDto<PersonDto>();
-            response.Data = payload.Adapt<PersonDto>();
+            var modify = _dbContext.Persons.Find(payload.Id);
+            if (modify != null)
+            {
+                modify.Name = payload.Name;
+                modify.Email = payload.Email;
+                _dbContext.Persons.Attach(payload.Adapt<Person>());
+                _dbContext.SaveChanges();
+                response.Data = payload.Adapt<PersonDto>();
+            }
+            else
+            {
+                response.StatusCode = 404;
+                response.Message = "Data not found";
+            }
             return response;
         }
         public ResponseDto<PersonDto> Delete(Int64 id)
         {
             var existing = _dbContext.Persons.Find(id);
-                var response = new ResponseDto<PersonDto>();
+            var response = new ResponseDto<PersonDto>();
             if (existing != null)
             {
                 _dbContext.Persons.Remove(existing);
