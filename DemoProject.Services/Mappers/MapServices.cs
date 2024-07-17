@@ -15,7 +15,7 @@ namespace DemoProject.Services.Mappers
         {
             TypeAdapterConfig<RegistrationDto, ApplicationUser>.NewConfig().Map(d => d.UserName, s => s.Email);
             services.AddScoped<IAuthServices, AuthServices>()
-                .AddScoped<IGenericServices<Person>, GenericServices<Person>>()
+                .AddScoped<IGenericServices<Person>, GenericServicess<Person>>()
                 .AddScoped<IAuthHelpers, AuthHelpers>()
                 .AddScoped<IPersonServices, PersonServices>();
             return services;
