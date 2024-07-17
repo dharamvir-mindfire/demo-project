@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DemoProject.Services.Services
 {
-    public class GenericServicess<T> : IGenericServices<T> where T : class
+    public class GenericServices<T> : IGenericServices<T> where T : class
     {
         private readonly AppDbContext _dbContext;
-        public GenericServicess(AppDbContext dbContext)
+        public GenericServices(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }
