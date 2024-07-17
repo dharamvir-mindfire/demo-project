@@ -8,6 +8,15 @@ export default function App() {
   const authUser = useAppSelector((state) => state?.authUser);
   const content = useRoutes(routes(!!authUser?.token));
 
+  return (
+    <Button
+      as="a"
+      to={'home'}
+      onClick={()=>{}}
+    >
+      Hello
+    </Button>
+  );
   // return <Button variant="secondary" onHover={() => {}} />;
   return content;
 }

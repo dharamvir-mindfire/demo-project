@@ -1,23 +1,16 @@
-import React from 'react'
-interface primaryProps{
-  variant:'primary';
-  onClick:Function
-}
-interface secondaryProps {
-  variant:'secondary';
-  onHover:Function
-}
+import { PropsOf } from "@headlessui/react/dist/types";
+import React, { ElementType, HTMLAttributes, ReactNode, createElement,ReactElement } from "react";
+import { LinkProps } from "react-router-dom";
 
-const Button = (props:primaryProps|secondaryProps) => {
-  if(props.variant == "primary"){
-    <div>Button</div>
-  }
-  if(props.variant == "secondary"){
-    <div>Button</div>
-  }
-  return (
-    <div>Button</div>
-  )
+interface linkProps extends LinkProps {
+  as: "a";
 }
+interface buttonProps extends React.ButtonHTMLAttributes<ElementType> {
+  as: 'button';
+}
+const Button = (props: linkProps | buttonProps) => {
+  const element = createElement(props?.as, {...props}, props.children)
+  return element
+};
 
-export default Button
+export default Button;
