@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <Target Name="InstallReactDependencies"
+          BeforeTargets="Build"
+          Condition="!Exists('$(MSBuildProjectDirectory)/node_modules')">
+    <Exec Command="npm install"
+          WorkingDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+
+  <Target Name="BuildReact"
+          BeforeTargets="Build">
+    <Exec Command="npm run build"
+          WorkingDirectory="$(MSBuildProjectDirectory)" />
+  </Target>
+
+</Project>
