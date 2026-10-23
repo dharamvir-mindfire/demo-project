@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
 
-namespace DemoProject.Services.CronJobs
+namespace DemoProject.Domain.CronJobs
 {
     public class CronJobService : IHostedService, IDisposable
     {

@@ -5,7 +5,7 @@ using DemoProject.Models;
 using Mapster;
 using Microsoft.AspNetCore.Identity;
 
-namespace DemoProject.Services
+namespace DemoProject.Domain
 {
     public class AuthServices : IAuthServices
     {

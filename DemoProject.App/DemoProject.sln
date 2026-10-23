@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProject.App", "DemoProj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProject.Data", "..\DemoProject.Data\DemoProject.Data.csproj", "{FAC23E65-B041-4EF5-B7AC-51063C026F27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProject.Services", "..\DemoProject.Services\DemoProject.Services.csproj", "{7B12CB40-23A6-4183-A7CB-CD7A294D98CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProject.Domain", "..\DemoProject.Domain\DemoProject.Domain.csproj", "{7B12CB40-23A6-4183-A7CB-CD7A294D98CC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProject.Infrastructure", "..\DemoProject.Infrastructure\DemoProject.Infrastructure.csproj", "{16289AB9-CF5C-4B16-B855-FF84A993E4FA}"
 EndProject

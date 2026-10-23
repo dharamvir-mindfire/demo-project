@@ -1,10 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>DemoProject.Domain</AssemblyName>
+    <RootNamespace>DemoProject.Domain</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\DemoProject.Domain\**\*.cs" Exclude="..\DemoProject.Domain\bin\**\*;..\DemoProject.Domain\obj\**\*" Link="Services\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoProject.Data\DemoProject.Data.csproj" />
+    <ProjectReference Include="..\DemoProject.Infrastructure\DemoProject.Infrastructure.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
@@ -22,11 +33,6 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\DemoProject.Data\DemoProject.Data.csproj" />
-    <ProjectReference Include="..\DemoProject.Infrastructure\DemoProject.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

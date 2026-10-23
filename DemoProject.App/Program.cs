@@ -1,7 +1,4 @@
-using Asp.Versioning;
-using DemoProject.services.Config;
-using DemoProject.Services.Config;
-using Microsoft.AspNetCore.Mvc;
+using DemoProject.Domain.Config;
 
 public class Program
 {

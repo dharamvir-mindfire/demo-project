@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace DemoProject.Services.Config
+namespace DemoProject.Domain.Config
 {
     public static class UseServices
     {

@@ -2,7 +2,7 @@
 using DemoProject.Infrastructure.IServices;
 using Microsoft.EntityFrameworkCore;
 
-namespace DemoProject.Services.Services
+namespace DemoProject.Domain.Services
 {
     public class GenericServices<T> : IGenericServices<T> where T : class
     {

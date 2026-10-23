@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DemoProject.Services.Config
+namespace DemoProject.Domain.Config
 {
     internal static class AutoMigration
     {

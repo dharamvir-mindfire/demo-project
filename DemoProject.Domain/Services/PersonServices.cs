@@ -6,7 +6,7 @@ using DemoProject.Models;
 using Mapster;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
-namespace DemoProject.Services
+namespace DemoProject.Domain
 {
     public class PersonServices : IPersonServices
     {

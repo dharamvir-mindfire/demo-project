@@ -1,9 +1,8 @@
 ﻿using Asp.Versioning.ApiExplorer;
 using DemoProject.Database;
 using DemoProject.Models;
-using DemoProject.Services.Config;
-using DemoProject.Services.CronJobs;
-using DemoProject.Services.Mappers;
+using DemoProject.Domain.CronJobs;
+using DemoProject.Domain.Mappers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 
-namespace DemoProject.services.Config
+namespace DemoProject.Domain.Config
 {
     public static class AddServices
     {

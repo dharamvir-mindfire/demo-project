@@ -3,11 +3,11 @@ using DemoProject.Helpers;
 using DemoProject.Infrastructure.IServices;
 using DemoProject.IServices;
 using DemoProject.Models;
-using DemoProject.Services.Services;
+using DemoProject.Domain.Services;
 using Mapster;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DemoProject.Services.Mappers
+namespace DemoProject.Domain.Mappers
 {
     public static class MapServices
     {

@@ -1,7 +1,7 @@
 ﻿using Asp.Versioning;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DemoProject.Services.Config
+namespace DemoProject.Domain.Config
 {
     internal static class AutoVersioning
     {

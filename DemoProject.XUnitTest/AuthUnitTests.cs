@@ -1,7 +1,7 @@
 ﻿using DemoProject.Dtos;
 using DemoProject.Helpers;
 using DemoProject.Models;
-using DemoProject.Services;
+using DemoProject.Domain;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
